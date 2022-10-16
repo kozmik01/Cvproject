@@ -1,68 +1,86 @@
 body{
        background:black;
-       background-image:url(/images.jpeg);
+       background-image:url(/background.jpg);
        background-repeat:no-repeat;
+       background-attachment: fixed;
        background-position:center;
+       background-size:cover;
        width:100%;
-       height:calc(100vh-90px);
+       height:50%;
        color: white;
 }
 h1{
-       border-top-style: dotted;
-       border-bottom-style: dotted;
-       border-left: solid;
-       border-right: solid;
-       background-color: gray;
+       background-color: none;
+       font-size:14px;
        text-align: center;
-       padding: 5px;
+       margin-left:10%;
+       margin-right:13%;
+       color:black;
 }
 h3{
        text-decoration: underline;
        text-align: center;
 }
 p{
-       color: blue;
+       color: black;
        border-style: outset;
-       border-radius: 5%;
-       background-color: gold;
-       padding:3px;
-       font-size: 18px;
-       font-family: consolas , san-serif;
+       background-color: yellow;
+       padding:5px;
+       font-size: 12px;
+       font-family: Playfair , san-serif;
        text-align: center;
 }
 th td{
         padding: 5px;
 }
 table, th, td {
-       border: 1.6px solid gold;
-       height: 38px;
-       font-size: 20px;
+       border: 1.6px solid yellow;
+       height: 28px;
+       font-size: 12px;
+       font-weight:bold;
+       color:black;
 }
 table{
-       border-spacing-right:10px;
+       border:17px;
        padding-left: 5px;
-}
-div{
-       width:100%;
-       height:90px;
-       background-color:black;
+       margin-right:10%;
+       margin-left:10%;
 }
 div nav{
        display:flex;
        justify-content: auto;
        align-items: center;
        padding: 10px 30px;
-       height:48px;
+       height:12px;
+       font-weight:bold;
 }
+}
+ li{
+       padding: 0;
+       background-color:none;
+       position: fixed;
+       width: 80%;
+       font-size: 14px;
+ }
+ li a {
+       display: inline;
+       color:black;
+       text-align: center;
+       padding: 4px 8px;
+       text-decoration: none;
+ }
 div nav li{
-       display: inline-flex;
-       padding: 5px 20px;
+       display: inline;
+       margin-top:10%;
 }
 div nav li a{
-       position:relative;
-       display: block;
+       display: inline-table;
        text-decoration: none;
-       color: lightblue;
-       font-size: 20px;
+       font-size: 17px;
+       font-weight:bold;
+}
+form{
+       margin-top:20px;
+       width:100%;
 }
     
