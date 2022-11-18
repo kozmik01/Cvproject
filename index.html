@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>KOZMIK CV</title>
-  <img id="logo" src="/kozmiklogo.jpg" style="width:100px;height:150px">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
   <!-- HTML -->
 
@@ -16,39 +15,116 @@
 </head>
 
 <body>
-<h1> KOZMIK KOZMO </h1>
-  <p> Full Stack Software Engineer. </p>
-<h3>Nteboheng Kozmik Monamoli</h3>
-<div class="background">
- <div class="transbox">
-  <p>Front end and back end developer from johannesburg, Orlando East, Soweto. </p>
- </div>
-  <h3> Experience </h3>
-  <div class="background">
- <div class="transbox">
-  <p>Former Woolworths sales<br></br> Former Total Sports,The Scene and Due South sales floor staff<br></br>
-    Former Rip Curl sales assistant, assistant store manager and store manager.<br></br>
-    Former Team leader Performance and Exhibitions at Funda Community College Soweto<br></br>Founder of Soweto Cannabis Enthusiasts and Soweto Longboarding. </p>
- </div>
-<h3>Backround</h3>
-<div class="background">
- <div class="transbox">
-<p>Nteboheng Monamoli also known as kozmik kozmo
-     Born 1987 January 11th grew up in Orlando East 
-     Ngubane street,just South of Johannesburg.
-     Finished High School 2005 at Namedi High School.<br></br>
-      I enjoy Research and Astronomy in my spare time.<br></br>
-       My latest projects include<br></br>
-       Kozmikidz and Kozmik Water Rockets Clubs.</p>
-    <div class="bx bx-menu" id="menu-icon">
-      <nav>
-        <ul id="menu">
-          <li><a href="About.html">About</a></li>
-          <li><a href="Works.html">Works</a></li>
-          <li><a href="Contact.html">Contact</a></li>
- </ul> 
+  
+<!---heading menu section-->
+<header>
+<a href="#" class ="logo"><img src="/kozmiklogo-wht.nobg.png"></a>
+<div class="bx bx-menu" id="menu"></div>
+  <ul class="navlist">
+    <li><a href="About.html">About</a></li>
+    <li><a href="Works.html">Works</a></li>
+    <li><a href="Contact.html">Contact</a></li>
+  </ul> 
+</header>
+
+<!---main section--->
+<section class ="home" id = "home">
+  <div class ="home-text">
+    <h1> Full Stack Software Engineer.</h1>
+    <h3>Name: Nteboheng</h3>
+    <h3>AKA's: Kozmo/Kozmik</h3>
+    <h3>Last Name: Monamoli</h3>
+    <h5>A front-end and back-end developer from <span>johannesburg, Orlando East, Soweto.</span></h5>
   </div>
- 
+
+<div class="home-img">
+  <img src="/profileshot~2.jpg">
+</div>
+</section>
+
+<!---section experiences---->
+<section class ="Skills" id ="Skills">
+  <div class="Skill-text"></div>
+    <ul>
+      <li>Coder and Programmer</li>
+      <li>Retail Management Experience</li>
+      <li>Team Leader </li>
+      <li>Founder and Longboarder</li>
+      <li>Cipc Company Registration.</li>
+    </ul>
+<section class="About" id="About">
+  <div class="About-text">
+      <h5>Nteboheng Monamoli also known as kozmik kozmo, Born 1987 January 11th grew up in Orlando East ,Ngubane street,just South of Johannesburg. Finished High School 2005 at Namedi High School.<span>
+      I enjoy Research, Astronomy, Coding, Sketching or Building things and more!
+      My latest projects include
+   Kozmikidz and Kozmik Water Rockets Clubs.</h5>
+</section> 
+
+<!---table section--->
+    <h3>COURSES FROM</h3>
+    <table border="1" style="width:85%">
+      <tr>
+        <th>COURSES</th>
+        <th>CERTIFICATE</th>
+        <th>PROGRESS</th>
+      </tr>
+      <tr>
+         <td>HTML</td>
+         <td>SoloLearn</td>
+         <td>complete</td>
+      </tr>
+      <tr>
+         <td>CSS</td>
+         <td>SoloLearn</td>
+         <td>completed</td>
+      </tr>
+      <tr>
+         <td>Web Development & <span>
+        Responsive Web Development</span></td>
+         <td>SoloLearn</td>
+         <td>completed</td>
+      </tr>
+    </table>
+  </div>
+</section>
+
+<!---CERTIFICATES--->
+<section class ="portfolio">
+  <div class="portfolio-content">
+    <div class="col">
+      <img src="/HTML_certificate.jpg" style="width:250px;heigh:250px">
+      <img src="/CSS_certificate.jpg" style="width:250px;height:250px;">
+      <img src="/Responsive Web Design_certificate.jpg" style="width:250px;height:250px;">
+      <img src="/Game Development with JS_certificate.jpg" style="width:250px;height:px;">
+      <img src="/Web Development Fundamentals_certificate.jpg" style="width:250px;height:250px;">
+      <img src="/kozmiklogo.jpg" style="width 250px;height: 250px;">
+    <img src="/rocketkozmo.jpg" style="width:250px;height:250px;">
+    <img scr="/scelogo.jpg" style="width:250px;height:250px;">
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="container">
+    <div class="center">
+      <h3> Contact </h3>
+      <p> Should you need any technical Web solution, contact or leave details below. </p>
+      <a href="number"> Mobile : 068 218 1842 <br> E-mail : kozmo.ntebo@gmail.com</br></a>
+    </div>
+    <div class="action">
+      <form>
+        <input placeholder="name" /></input>
+        <input placeholder="email" /></input>
+        <textarea placeholder="message" required></textarea><br></br>
+        <input type="submit" value="send">
+      </form>
+    </div>
+  </div>
+</section>
+<!---footer section--->
+<footer>
+  <p>created by nteboheng kozmo monamoli ®</p>
+</footer>
   <script src="main.js"></script>
 </body>
 
