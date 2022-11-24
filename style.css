@@ -7,12 +7,16 @@
   list-style: none;
   text-decoration: none;
   scroll-behavior: smooth;
+  scroll-margin-bottom: .5fr;
 }
-
 /* contents of the documents params*/
 /* entire body or view*/
 body {
-  background: black;
+  background: url(/resources/ST1.jpg);
+  background-size: cover;
+  background-position: center; 
+  background-attachment: fixed;
+  background-position-y: 100%;
   color: white;
 }
 
@@ -27,7 +31,7 @@ header {
   align-items: center;
   justify-content: space-between;
   background: transparent;
-  padding: 30px 18%;
+  padding: 20px 19%;
   /*transition: 3s;*/
 }
 
@@ -35,7 +39,7 @@ header {
 .logo img {
   background: transparent;
   background-size: auto;
-  max-width: 130%;
+  max-width: 100%;
   width: 100px;
   height: 120px;
   margin: 0px 80px 0px 35%;
@@ -59,7 +63,7 @@ header {
   padding: 10px 27px;
 }
 
-/*psuedo selection position after DOM Loads*/
+/*URL position after DOM Loads*/
 .navlist a::after {
   content: '';
   position: absolute;
@@ -90,24 +94,21 @@ section {
   padding: 100px 18%;
 }
 
-/*home content styling */
+/*text and image view */
 .home {
-  min-height: 39vh;
+  min-height: 15vh;
   height: 35vh;
   width: 100vw;
-  background: darkblue;
-  /*background: url(/background.jpg);*/
-  background-size: cover;
   position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   grid-gap: 7rem;
 }
-
+/*Full stack text*/
 .home-text h1 {
-  margin: 50px 0px 45px;
-  font-size: 45px;
+  margin: 15px 0px 25px;
+  font-size: 35px;
   line-height: 1;
   font-weight: 500;
 }
@@ -131,6 +132,7 @@ span {
 
 .home-text p {
   font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
   color: white;
   line-height: 28px;
   margin: 38px auto;
@@ -143,6 +145,7 @@ span {
   height: auto;
   margin-top: 10vh;
   border: 5px solid gold;
+  border-radius: 30px;
 }
 
 /*About section or page attributes*/
@@ -325,7 +328,6 @@ span {
   .navlist {
     position: absolute;
     top: 6px;
-    left: 0;
     right: 0;
     flex-direction: row;
     background: transparent;
@@ -402,11 +404,48 @@ span {
     
   }
 
-  .navlist li a {
+  .navlist a {
     display: inline-block;
-    font-size: 16px;
+    font-size: 12px;
     padding: 2px;
     background-color: transparent;
+  }
+  
+  .logo img{
+    margin-left: 7%;
+    width: 10%;
+    height: 5%;
+    position: relative;
+  }
+  .home {
+    margin: 5% auto;
+    font-size: 107%;
+  }
+
+  .home-text {
+    padding-top: 7px;
+  }
+
+  .home-img {
+    text-align: center;
+  }
+
+  .home-img img {
+    width: 120px;
+    height: auto;
+  }
+
+  .About {
+    grid-template-columns: 1fr;
+  }
+
+  .about img {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  section {
+    padding: 60% 3%;
   }
 
   .contact .action form input[type="email"] {
