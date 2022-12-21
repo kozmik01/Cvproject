@@ -10,13 +10,13 @@
 }
 /* contents of the documents params*/
 /* entire body or view*/
-body {
-  background: url(/resources/ST1.jpg);
-  background-size: cover;
-  background-position: center; 
-  background-attachment: fixed;
-  perspective-origin: 0,0,0,45deg;
-  color: white;
+:root {
+  width: 100%;
+  height: calc(100vh-70px);
+  background: black;
+  display: flex;
+  align-items: center;
+  color: whitesmoke;
 }
 
 /*URL or home icons*/
@@ -38,9 +38,10 @@ header {
 .logo img {
   background: transparent;
   background-size: auto;
-  max-width: 100%;
+  max-width: 50%;
   width: 100px;
-  height: 120px;
+  max-height: 60%;
+  height: 80px;
   margin: 0px 80px 0px 35%;
 }
 
@@ -78,7 +79,7 @@ header {
   width: 100%;
 }
 
-/*Menu bar and pointer attribute*/
+/* Menu bar and pointer attribute */
 #menu-icon {
   font-size: 35px;
   color: white;
@@ -94,7 +95,7 @@ section {
 
 /*text and image view */
 .home {
-  min-height: 15vh;
+  min-height: 60vh;
   height: 35vh;
   width: 100vw;
   position: relative;
@@ -105,7 +106,7 @@ section {
 }
 /*Full stack text*/
 .home-text h1 {
-  margin: 15px 0px 25px;
+  margin: 2% 0px 5px;
   font-size: 35px;
   line-height: 1;
   font-weight: 500;
@@ -129,7 +130,7 @@ span {
 }
 
 .home-text p {
-  font-size: 30px;
+  font-size: 25px;
   font-family: 'Courier New', Courier, monospace;
   color: white;
   line-height: 28px;
@@ -154,13 +155,14 @@ span {
   grid-gap: 2rem;
 }
 
-/*About contents styling*/
+/*About contents styling cipc and founder*/
 .Skills .bullet-text {
   font-size: 30px;
   font-weight: 500;
-  margin: 30vh 0px 26vh;
+  margin: 28vh 0px 0vh;
   line-height: 1, 1;
   border: 2px solid gold;
+  background: black;
 
 }
 
@@ -204,16 +206,31 @@ span {
   color: white;
   line-height: 28px;
 }
-
 /*Table element on DOM*/
 .table {
   position: center;
-  margin-left: 20vw;
+  margin-left: 10vw;
 }
 
 .table .table-content {
   align-items: center;
   font-weight: 500;
+}
+.hero{
+  display: grid;
+  grid-gap: 5em;
+  align-items: center;
+  text-align: center;
+}
+.hero img{
+  margin-left: 25%;
+}
+.hero img{
+  border: 2px solid gold;
+  max-width: 30%;
+  width: 50%;
+  height: auto;
+  border-radius: 12%;
 }
 
 /*Image Section or contents*/
@@ -388,7 +405,8 @@ span {
   }
 }
 
-@media(max-width:540px) {
+  
+@media(min-device-width: 540px) and(max-device-width:720px) {
   .navlist{
     list-style-type: none;
     margin: 0;
@@ -397,14 +415,14 @@ span {
   }
 
   .navlist li {
-    right: -1;
+    right: 0;
     top: 0;
     
   }
 
   .navlist a {
     display: inline-block;
-    font-size: 12px;
+    font-size: 10px;
     padding: 2px;
     background-color: transparent;
   }
@@ -416,12 +434,16 @@ span {
     position: relative;
   }
   .home {
-    margin: 5% auto;
-    font-size: 107%;
+    margin: 1em auto;
+    font-size: 100%;
+  }
+  
+  .home-text h1{
+    margin-top: 0vh auto;
   }
 
   .home-text {
-    padding-top: 7px;
+    padding-top: 3px;
   }
 
   .home-img {
@@ -443,10 +465,47 @@ span {
   }
 
   section {
-    padding: 60% 3%;
+    padding: 40% 3%;
   }
 
   .contact .action form input[type="email"] {
     width: 10%;
+  }
+}
+
+/* mobicel beam screen */
+
+@media only screen and (min-device-width: 350px) and (max-device-width: 480px) {
+  .navlist li{
+    margin: 0 0;
+    padding: 0;
+    border: 1px solid gold;
+  }
+  .navlist li a{
+    font-size: 2%;
+    padding: 0;
+    margin: 0 1 auto;
+    right: 0%;
+  }
+  .logo{
+    width: 15%;
+  }
+  .logo img{
+    border: 1px solid gold;
+    padding: 0%;
+    margin-left: 20%;
+  }
+  .home-img{
+    max-width: 50%;
+  }
+  .home-text{
+    font-size: auto;
+  }
+  .home {
+    padding-top: 0%;
+    border: 2px solid gold;
+  }
+  .skills{
+   max-height: 1vh;
   }
 }
